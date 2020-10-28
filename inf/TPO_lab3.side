@@ -1,0 +1,1009 @@
+{
+  "id": "47acfa82-85bb-4640-9696-2b62c2416e57",
+  "version": "2.0",
+  "name": "TPO_lab3",
+  "url": "https://ulmarts.ru/",
+  "tests": [{
+    "id": "c3ff5a78-d5b2-4b26-8674-3db93f0cb6e7",
+    "name": "getCoffeMakersList",
+    "commands": [{
+      "id": "3aa30b4a-3976-4028-8ed9-840dc2972766",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf10acb3-ffbc-4c93-8782-67c2beeb22c0",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"dropdownMenuButton\"]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33749b29-6d9a-4655-847e-f768aa280b24",
+      "comment": "",
+      "command": "click",
+      "target": "/html/body/div[3]/div/div[2]/div/div[4]/ul/li[2]",
+      "targets": [
+        ["linkText=Каталог товаров", "linkText"],
+        ["css=.main-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог товаров')]", "xpath:link"],
+        ["xpath=//div[@id='dropdownMenuButton']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'catalog')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог товаров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c37d95eb-20c9-48bf-b48f-d6196338c0cc",
+    "name": "showPopularShopInfo",
+    "commands": [{
+      "id": "3d39b12d-159a-4e38-ac7e-ed5452dff21b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a618a53-9d1b-4202-a8f1-59b9d94e3708",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[16]/div/div[2]/div",
+      "targets": [
+        ["css=.mag-row:nth-child(21) .col-md-3:nth-child(2) > .margin-t", "css:finder"],
+        ["xpath=//div[16]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52cdc695-5c74-422b-8aa8-c409b14edb86",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[16]/div/div/div/a",
+      "targets": [
+        ["linkText=Отделение Ленинградский пр-кт, д. 49А", "linkText"],
+        ["css=.mag-row:nth-child(21) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Отделение Ленинградский пр-кт, д. 49А')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'goroda/yaroslavl/yaroslavl-leningradskiy-pr-kt-d-49a')]", "xpath:href"],
+        ["xpath=//div[16]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Отделение Ленинградский пр-кт, д. 49А')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "431b2e44-3e8b-4a25-a21f-4caea3d1494c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,500)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "892f504b-6398-41f6-bff8-370806832b24",
+    "name": "showSiteMap",
+    "commands": [{
+      "id": "ba0fb21b-20cd-464a-9238-832c1a06449f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2e9eb78-6754-4d4e-b0e6-9b5dd319f866",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='footer']/div/div[2]/div/p/a",
+      "targets": [
+        ["linkText=Карта сайта", "linkText"],
+        ["css=.text-muted > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Карта сайта')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div[2]/div/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sitemap')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Карта сайта')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "efc9fdef-aa7e-4ade-a323-d95594db1acd",
+    "name": "writeShopReview",
+    "commands": [{
+      "id": "b6c4fac6-611a-40f7-bb9a-7d28544e7c56",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba725114-0d71-4e3c-84e5-4dfcc2220de3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[16]/div/div/div/a",
+      "targets": [
+        ["linkText=Отделение Ленинградский пр-кт, д. 49А", "linkText"],
+        ["css=.mag-row:nth-child(21) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Отделение Ленинградский пр-кт, д. 49А')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'goroda/yaroslavl/yaroslavl-leningradskiy-pr-kt-d-49a')]", "xpath:href"],
+        ["xpath=//div[16]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Отделение Ленинградский пр-кт, д. 49А')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98ddc831-c37c-472c-95ae-d9f44d4f5315",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,800)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "511621a9-a2d3-4752-a6fa-6c065c11b3ad",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4780)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10d9fa8f-33f1-4808-ae60-029517c37459",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/input",
+      "targets": [
+        ["id=comment-name", "id"],
+        ["name=name", "name"],
+        ["css=#comment-name", "css:finder"],
+        ["xpath=//input[@id='comment-name']", "xpath:attributes"],
+        ["xpath=//form[@id='comment-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e2bbaf6-c626-4a2d-a230-15b71c2489de",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[2]/input",
+      "targets": [
+        ["id=comment-name", "id"],
+        ["name=name", "name"],
+        ["css=#comment-name", "css:finder"],
+        ["xpath=//input[@id='comment-name']", "xpath:attributes"],
+        ["xpath=//form[@id='comment-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "I"
+    }, {
+      "id": "b7e7b099-26e0-4fbb-8f2b-80060c3fd058",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/input",
+      "targets": [
+        ["id=comment-email", "id"],
+        ["name=email", "name"],
+        ["css=#comment-email", "css:finder"],
+        ["xpath=//input[@id='comment-email']", "xpath:attributes"],
+        ["xpath=//form[@id='comment-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e99d9aea-7b53-4189-8309-71910f97b098",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[3]/input",
+      "targets": [
+        ["id=comment-email", "id"],
+        ["name=email", "name"],
+        ["css=#comment-email", "css:finder"],
+        ["xpath=//input[@id='comment-email']", "xpath:attributes"],
+        ["xpath=//form[@id='comment-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "addr@example.com"
+    }, {
+      "id": "5572a8e1-8425-4a4a-b965-aec143e664bd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea",
+      "targets": [
+        ["id=comment-editor", "id"],
+        ["name=text", "name"],
+        ["css=#comment-editor", "css:finder"],
+        ["xpath=//textarea[@id='comment-editor']", "xpath:attributes"],
+        ["xpath=//div[@id='markItUpComment-editor']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8eead7d-1afd-4d68-841b-c5c645d2dcc7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea",
+      "targets": [
+        ["id=comment-editor", "id"],
+        ["name=text", "name"],
+        ["css=#comment-editor", "css:finder"],
+        ["xpath=//textarea[@id='comment-editor']", "xpath:attributes"],
+        ["xpath=//div[@id='markItUpComment-editor']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "some text"
+    }, {
+      "id": "2f458635-cb06-444a-b97e-a34d222fa3a6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[6]/input",
+      "targets": [
+        ["css=.preview", "css:finder"],
+        ["xpath=//input[@value='Предпросмотр']", "xpath:attributes"],
+        ["xpath=//form[@id='comment-form']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a1723cf-aa3c-4efb-87b4-bd868290868f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li/div/div[2]",
+      "targets": [
+        ["css=.ticket-comment-text", "css:finder"],
+        ["xpath=//li[@id='comment-']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//li/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "61f9d428-85c1-4449-a487-a9e5e98687dd",
+    "name": "showYandexMapSelectShop",
+    "commands": [{
+      "id": "887c0abd-f2d2-4e7b-9a5c-d34f15d70eea",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "163d6240-be29-461b-a92b-a904b68ff52d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li/a",
+      "targets": [
+        ["css=.nav > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Города присутствия')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'goroda')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b0e07cf-0bbf-485a-9229-49ee9b12a887",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ymaps-2-1-77-html-placemark-overlay:nth-child(1) .ymaps-2-1-77-placemark__content-inner",
+      "targets": [
+        ["css=.ymaps-2-1-77-html-placemark-overlay:nth-child(1) .ymaps-2-1-77-placemark__content-inner", "css:finder"],
+        ["xpath=//div[@id='yandexMap']/ymaps/ymaps/ymaps/ymaps[5]/ymaps/ymaps/ymaps/ymaps[3]/ymaps", "xpath:idRelative"],
+        ["xpath=//ymaps[5]/ymaps/ymaps/ymaps/ymaps[3]/ymaps", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b14a01f-228f-4b8d-8149-07cfe5294bf3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//p/a",
+      "targets": [
+        ["linkText=Подробнее", "linkText"],
+        ["css=p:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Подробнее')]", "xpath:link"],
+        ["xpath=//ymaps[@id='id_160380013485210497125']/ymaps/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'goroda/troick/troick-im-yu-a-gagarina-ul-d-14')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Подробнее')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11d90ee1-800d-457b-9649-ce7c6816076b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,21.33333396911621)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc5c6e66-07ac-473c-85cf-ab491ca43478",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1700)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8b91881f-b950-4f2f-b21d-385e4b250b42",
+    "name": "getCoffeeMakerProfile",
+    "commands": [{
+      "id": "9dfad5be-74af-4306-b285-1a88c706143c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9c1924b-3e97-4844-9436-f57a61c8c629",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/a",
+      "targets": [
+        ["linkText=Каталог товаров", "linkText"],
+        ["css=.main-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог товаров')]", "xpath:link"],
+        ["xpath=//div[@id='dropdownMenuButton']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'catalog')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог товаров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65af0c19-e534-45d8-97cc-956a183c8d1c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[4]/ul/li[2]/a",
+      "targets": [
+        ["linkText=Кофемашины", "linkText"],
+        ["css=.dropdown-menu .col-md-3:nth-child(4) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Кофемашины')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'shop/kofemashinyi')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Кофемашины')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80f9bd69-0bb7-4688-8bca-476a811106aa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div[3]/div/div/a",
+      "targets": [
+        ["linkText=Кофемашина Krups Quattro Force Evidence EA891C10", "linkText"],
+        ["css=.owl-item:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Кофемашина Krups Quattro Force Evidence EA891C10')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'shop/kofemashina-krups-quattro-force-evidence-ea891c10')]", "xpath:href"],
+        ["xpath=//div/div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Кофемашина Krups Quattro Force Evidence EA891C10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "df87f01d-436a-485a-9eb3-f0ba2adb2253",
+    "name": "getFullCatalog",
+    "commands": [{
+      "id": "a468563f-96d7-40a8-bff2-66936152e6bc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cb57395-f5ee-4cca-b323-4cc34b51d533",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/a",
+      "targets": [
+        ["linkText=Каталог товаров", "linkText"],
+        ["css=.main-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог товаров')]", "xpath:link"],
+        ["xpath=//div[@id='dropdownMenuButton']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'catalog')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог товаров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4b067607-220b-4658-add6-a1ffb6221337",
+    "name": "getDeliveryInfo",
+    "commands": [{
+      "id": "87e5b51a-5549-42b9-9c13-1e4ab7918fe3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7afa267e-bb9a-4639-8223-c9d418d11836",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[6]/div/div/div/ul/li/a",
+      "targets": [
+        ["linkText=Доставка", "linkText"],
+        ["css=.container > .row > .col-md-3:nth-child(1) li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Доставка')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'dostavka')]", "xpath:href"],
+        ["xpath=//div[6]/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Доставка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "52ee4d3c-6464-4586-af04-c674d879d2cf",
+    "name": "goToInstagramPage",
+    "commands": [{
+      "id": "1b391601-01d0-476d-8723-14431b5f1ff7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aaf5a11d-52d3-4e34-98a3-0c572367c89b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[4]/ion-icon",
+      "targets": [
+        ["css=a:nth-child(4) > .md", "css:finder"],
+        ["xpath=//ion-icon[@name='logo-instagram']", "xpath:attributes"],
+        ["xpath=//div[@id='footer']/div/div/div[4]/div[2]/a[4]/ion-icon", "xpath:idRelative"],
+        ["xpath=//a[4]/ion-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a149e8e-2069-4276-b1b4-61803dfcf1ea",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4186}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1c52410f-49c5-4ab3-870b-3b11a01ff7e9",
+    "name": "getPrivicyPolicy",
+    "commands": [{
+      "id": "a2aecc97-f84d-4268-bb2c-09324bbc3f1f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7d50af7-b43c-45a3-aedc-7178778ccfc2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[15]/div/div/div/a",
+      "targets": [
+        ["linkText=Отделение Лесопарковая ул., д. 6", "linkText"],
+        ["css=.mag-row:nth-child(20) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Отделение Лесопарковая ул., д. 6')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'goroda/zheleznodorozhnyj/zheleznodorozhnyj-lesoparkovaya-ul-d-6')]", "xpath:href"],
+        ["xpath=//div[15]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Отделение Лесопарковая ул., д. 6')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a15195d-b15b-456a-82d0-8ec32bb9414e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,3500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "726f53a0-d58b-488f-b14a-32e0ac198f16",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/p/a",
+      "targets": [
+        ["linkText=политикой конфиденциальности", "linkText"],
+        ["css=p:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'политикой конфиденциальности')]", "xpath:link"],
+        ["xpath=//form[@id='comment-form']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/politika')]", "xpath:href"],
+        ["xpath=//form/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'политикой конфиденциальности')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3b50d2cd-9bb4-47f9-9fb9-6a373109aeb9",
+    "name": "goToYandexMaps",
+    "commands": [{
+      "id": "4db38e1b-43bc-4ad7-b02e-e0e6f62b9e4e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "569fe1fb-7c8b-4744-9f76-578287c45b75",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li/a",
+      "targets": [
+        ["css=.nav > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Города присутствия')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'goroda')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2945d6ba-8a55-405e-b606-94a3432c1e93",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1570.6666259765625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bd6b35d-f156-46c8-8fd2-a60e6a2ff19c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ymaps[2]/ymaps/ymaps/ymaps/ymaps[2]/ymaps",
+      "targets": [
+        ["css=.ymaps-2-1-77-gotoymaps__text", "css:finder"],
+        ["xpath=//div[@id='yandexMap']/ymaps/ymaps/ymaps/ymaps[3]/ymaps[2]/ymaps/ymaps/ymaps/ymaps[2]/ymaps", "xpath:idRelative"],
+        ["xpath=//ymaps[2]/ymaps/ymaps/ymaps/ymaps[2]/ymaps", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5663",
+      "windowTimeout": 2000
+    }, {
+      "id": "872d806a-bd11-4540-a7af-edbee525b988",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5663}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3f134b36-85b2-4a20-b74a-e3bd77eb2138",
+    "name": "getAllCitiesList",
+    "commands": [{
+      "id": "998b4e70-110d-440a-aae2-d6b687486c1e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cf927fd-1cf0-4308-9e5f-100e40bf8e6a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li/a",
+      "targets": [
+        ["css=.nav > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Города присутствия')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'goroda')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "22effd76-9a58-4454-8097-da058c7f90d8",
+    "name": "getFeedBackInfo",
+    "commands": [{
+      "id": "b539ac34-a55f-4b90-9475-d3f696d37289",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6b867da-df8c-4001-92a6-7d82598bb51c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a",
+      "targets": [
+        ["linkText=Обратная связь", "linkText"],
+        ["css=.pull-right > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Обратная связь')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/obratnaya-svyaz')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Обратная связь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ebc30d55-8723-4f72-aa65-3ddedf7c76f9",
+    "name": "changeInfoPreviewByCircles",
+    "commands": [{
+      "id": "aef44232-8d4d-4bf1-a083-d94ab50328fe",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e080b6f-1b17-4050-a046-94e709ab1ab6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ol/li[2]",
+      "targets": [
+        ["css=.carousel-indicators > li:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='myCarousel']/ol/li[2]", "xpath:idRelative"],
+        ["xpath=//ol/li[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5ca1c6f-3af1-4bc0-8a1a-0a762a3c75fa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ol/li[3]",
+      "targets": [
+        ["css=.carousel-indicators > li:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='myCarousel']/ol/li[3]", "xpath:idRelative"],
+        ["xpath=//ol/li[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f58e20a9-8dee-4099-a2a8-9fb588b71a37",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ol/li",
+      "targets": [
+        ["css=.carousel-indicators > li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='myCarousel']/ol/li", "xpath:idRelative"],
+        ["xpath=//ol/li", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0f64b127-1391-4db8-987d-b9e653283036",
+    "name": "changeInfoPreviewByArrows",
+    "commands": [{
+      "id": "c5023a1e-1da6-491f-ab0d-12bb8d9e4ea5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d3fe28d-22f8-419e-b0af-901255bf4fd1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[2]/span",
+      "targets": [
+        ["css=.glyphicon-chevron-right", "css:finder"],
+        ["xpath=//div[@id='myCarousel']/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5703aeac-2ad8-4f01-9ce7-27cd799d059a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[2]/span",
+      "targets": [
+        ["css=.glyphicon-chevron-right", "css:finder"],
+        ["xpath=//div[@id='myCarousel']/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0da294e-23d2-4b26-a0d3-59c240472cf5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[2]/span",
+      "targets": [
+        ["css=.glyphicon-chevron-right", "css:finder"],
+        ["xpath=//div[@id='myCarousel']/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f0ac0606-363b-4fe9-9426-abcface94225",
+    "name": "changeCurrentCity",
+    "commands": [{
+      "id": "944ce9d9-82dd-4633-a64f-c286459ac829",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f67a94f-449b-4a96-b0b8-0d99e26ad036",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span",
+      "targets": [
+        ["css=.dashed:nth-child(2)", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Москва и Подмосковье')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04d91250-7326-42e5-83cd-68f813cac827",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/ul/li[20]/a",
+      "targets": [
+        ["linkText=Санкт Петербург", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(20) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Санкт Петербург')])[2]", "xpath:link"],
+        ["xpath=//div[@id='cityselect']/div/div/div[2]/ul/li[20]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'goroda/sankt-peterburg')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[20]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bfea4449-0e4c-439a-ba16-8e256d9aecc4",
+    "name": "returnToMainPageFromProfile",
+    "commands": [{
+      "id": "b9e5b448-f053-40cd-a6ab-5103cf534ef6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d40e9912-6178-4bc7-b894-0dea80a87244",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/a",
+      "targets": [
+        ["linkText=Каталог товаров", "linkText"],
+        ["css=.main-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог товаров')]", "xpath:link"],
+        ["xpath=//div[@id='dropdownMenuButton']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'catalog')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог товаров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5bd6bca-bba7-4d26-98e7-83ba62c64094",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[4]/ul/li[2]/a",
+      "targets": [
+        ["linkText=Кофемашины", "linkText"],
+        ["css=.dropdown-menu .col-md-3:nth-child(4) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Кофемашины')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'shop/kofemashinyi')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Кофемашины')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed52baa4-b36f-4435-9317-a06a5eae79c1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img",
+      "targets": [
+        ["css=.logo > img", "css:finder"],
+        ["xpath=//img[@alt='Юлмарт (Ulmart) - Магазины электроники']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d2477d31-cb49-4736-9314-ba8236bffb7e",
+    "name": "setCityInProfile",
+    "commands": [{
+      "id": "b33d8b5c-5736-4593-b6f0-729e604e13bc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3a63c33-f450-4838-8b47-240118c53b01",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/a",
+      "targets": [
+        ["linkText=Каталог товаров", "linkText"],
+        ["css=.main-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог товаров')]", "xpath:link"],
+        ["xpath=//div[@id='dropdownMenuButton']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'catalog')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог товаров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b5e26c1-ea6e-427a-b76f-ad1e644265b6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[4]/ul/li[2]/a",
+      "targets": [
+        ["linkText=Кофемашины", "linkText"],
+        ["css=.dropdown-menu .col-md-3:nth-child(4) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Кофемашины')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'shop/kofemashinyi')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Кофемашины')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a42ecdc2-d1f1-49be-ac4c-61d96f29222e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[7]/input",
+      "targets": [
+        ["id=CitySearchInput", "id"],
+        ["css=#CitySearchInput", "css:finder"],
+        ["xpath=//input[@id='CitySearchInput']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5225c82c-1a53-4f83-91a2-f937fce6dce9",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[7]/input",
+      "targets": [
+        ["id=CitySearchInput", "id"],
+        ["css=#CitySearchInput", "css:finder"],
+        ["xpath=//input[@id='CitySearchInput']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "Вологда"
+    }, {
+      "id": "34a3de92-d0c3-4fe4-a3b2-43dd269abf79",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[62]/a",
+      "targets": [
+        ["linkText=Вологда", "linkText"],
+        ["css=li:nth-child(62) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Вологда')]", "xpath:link"],
+        ["xpath=//ul[@id='CitySearchUl']/li[62]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'catalog/vologda')]", "xpath:href"],
+        ["xpath=//li[62]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вологда')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b80cbb76-5e52-45f7-8b44-4747f4c45528",
+    "name": "getPupularCities",
+    "commands": [{
+      "id": "6ea0b0bf-8e62-42d6-84f8-86c2dd90a9a1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4057e9c5-40b5-4558-9873-35d1cfcc75af",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div/span",
+      "targets": [
+        ["css=.dashed:nth-child(1)", "css:finder"],
+        ["xpath=//div[5]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Показать популярные разделы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a414010-cf16-4a79-8157-fd480cb0552b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div/div/div/div/ul/li[4]/a",
+      "targets": [
+        ["css=#popular .col-md-3:nth-child(1) li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Владимир')])[2]", "xpath:link"],
+        ["xpath=//div[@id='popular']/div/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'goroda/vladimir')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "263b985f-3b01-4b55-bbc0-e05902436d5c",
+    "name": "getPopularSales",
+    "commands": [{
+      "id": "c3780ce4-16bb-49cb-a07a-9d38358d2c8e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2112dfd8-1f2d-4b71-ac8b-d009b38b84e9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div/span",
+      "targets": [
+        ["css=.dashed:nth-child(1)", "css:finder"],
+        ["xpath=//div[5]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Показать популярные разделы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a252f83-009e-4d5b-9458-d7361ee1139e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div/div/div/div[3]/ul/li[4]/a",
+      "targets": [
+        ["linkText=Скидки и акции Юлмарт в г. Майкоп", "linkText"],
+        ["css=.col-md-3:nth-child(3) > .clean > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Скидки и акции Юлмарт в г. Майкоп')]", "xpath:link"],
+        ["xpath=//div[@id='popular']/div/div[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'skidki/maykop')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Скидки и акции Юлмарт в г. Майкоп')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "442c2046-e225-4a86-82ea-067b952622c2",
+    "name": "getPopularCatalogTopics",
+    "commands": [{
+      "id": "347fbb16-88db-4abf-91d7-e1ec46a931a1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92e3662f-090d-4cc1-b761-d6263cf85ed9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div/span",
+      "targets": [
+        ["css=.dashed:nth-child(1)", "css:finder"],
+        ["xpath=//div[5]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Показать популярные разделы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f8269e3-121b-4946-9a61-7c93c8f52b94",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div/div/div/div[2]/ul/li[3]/a",
+      "targets": [
+        ["linkText=Каталог товаров Ulmart Зеленоград", "linkText"],
+        ["css=#popular .col-md-3:nth-child(2) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог товаров Ulmart Зеленоград')]", "xpath:link"],
+        ["xpath=//div[@id='popular']/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'catalog/zelenograd')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог товаров Ulmart Зеленоград')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8d54078a-bcfa-4f00-bf50-786a74e2f18f",
+    "name": "getPopularTopicsInCatalog",
+    "commands": [{
+      "id": "997777a8-92e1-432b-bc76-6426cb08d95b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5a8ca22-cf72-4f7d-8c48-acb640e506b3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div/span",
+      "targets": [
+        ["css=.dashed:nth-child(1)", "css:finder"],
+        ["xpath=//div[5]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Показать популярные разделы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "505b9ba9-e6da-4821-b251-4db1ba039202",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div/div/div/div[4]/ul/li[5]/a",
+      "targets": [
+        ["linkText=Кофемашины Юлмарт", "linkText"],
+        ["css=.col-md-3:nth-child(4) > .clean > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Кофемашины Юлмарт')]", "xpath:link"],
+        ["xpath=//div[@id='popular']/div/div[4]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'shop/kofemashinyi')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div[4]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Кофемашины Юлмарт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e0313db7-512b-46d8-b0d1-94bbfc3d34d2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c3ff5a78-d5b2-4b26-8674-3db93f0cb6e7"]
+  }],
+  "urls": ["https://ulmarts.ru/", "https://itmo.ru/ru/exam/0/P3211/raspisanie_sessii_P3211.htm", "https://www.instagram.com/iloveulmart/?hl=ru"],
+  "plugins": []
+}
