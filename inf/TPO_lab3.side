@@ -2,7 +2,7 @@
   "id": "47acfa82-85bb-4640-9696-2b62c2416e57",
   "version": "2.0",
   "name": "TPO_lab3",
-  "url": "https://ulmarts.ru/",
+  "url": "https://www.instagram.com/iloveulmart/?hl=ru",
   "tests": [{
     "id": "c3ff5a78-d5b2-4b26-8674-3db93f0cb6e7",
     "name": "getCoffeMakersList",
@@ -108,42 +108,49 @@
     "id": "efc9fdef-aa7e-4ade-a323-d95594db1acd",
     "name": "writeShopReview",
     "commands": [{
-      "id": "b6c4fac6-611a-40f7-bb9a-7d28544e7c56",
+      "id": "006f228b-4ff2-4495-ab15-6f4093824d29",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://ulmarts.ru/goroda",
       "targets": [],
       "value": ""
     }, {
-      "id": "ba725114-0d71-4e3c-84e5-4dfcc2220de3",
+      "id": "392564e1-50f1-469c-9942-8d28b951ee1d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,3330)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "261cd986-0045-4d66-92c4-6cc79b21634b",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[16]/div/div/div/a",
+      "target": "xpath=//div[17]/div/div/div/a",
       "targets": [
-        ["linkText=Отделение Ленинградский пр-кт, д. 49А", "linkText"],
-        ["css=.mag-row:nth-child(21) a", "css:finder"],
-        ["xpath=//a[contains(text(),'Отделение Ленинградский пр-кт, д. 49А')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'goroda/yaroslavl/yaroslavl-leningradskiy-pr-kt-d-49a')]", "xpath:href"],
-        ["xpath=//div[16]/div/div/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Отделение Ленинградский пр-кт, д. 49А')]", "xpath:innerText"]
+        ["linkText=Отделение Маяковского ул., д. 17", "linkText"],
+        ["css=.mag-row:nth-child(30) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Отделение Маяковского ул., д. 17')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'goroda/zheleznodorozhnyj/zheleznodorozhnyj-mayakovskogo-ul-d-17')]", "xpath:href"],
+        ["xpath=//div[17]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Отделение Маяковского ул., д. 17')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "98ddc831-c37c-472c-95ae-d9f44d4f5315",
+      "id": "948bf522-611b-45ae-8ce7-ebe2368f4bf6",
       "comment": "",
       "command": "runScript",
-      "target": "window.scrollTo(0,800)",
+      "target": "window.scrollTo(0,3200)",
       "targets": [],
       "value": ""
     }, {
-      "id": "511621a9-a2d3-4752-a6fa-6c065c11b3ad",
+      "id": "b60f4abd-14d0-402e-b6f5-0bcd44351d42",
       "comment": "",
       "command": "runScript",
-      "target": "window.scrollTo(0,4780)",
+      "target": "window.scrollTo(0,4418.66650390625)",
       "targets": [],
       "value": ""
     }, {
-      "id": "10d9fa8f-33f1-4808-ae60-029517c37459",
+      "id": "d169d306-6dd8-4b36-b633-d8435aa092a7",
       "comment": "",
       "command": "click",
       "target": "xpath=//div[2]/input",
@@ -157,7 +164,7 @@
       ],
       "value": ""
     }, {
-      "id": "9e2bbaf6-c626-4a2d-a230-15b71c2489de",
+      "id": "0f302166-d29d-48ca-b406-6809a9d48ed6",
       "comment": "",
       "command": "type",
       "target": "xpath=//div[2]/input",
@@ -171,7 +178,7 @@
       ],
       "value": "I"
     }, {
-      "id": "b7e7b099-26e0-4fbb-8f2b-80060c3fd058",
+      "id": "fec39eb1-2ff3-464a-b714-e87adf7a6ff2",
       "comment": "",
       "command": "click",
       "target": "xpath=//div[3]/input",
@@ -185,7 +192,7 @@
       ],
       "value": ""
     }, {
-      "id": "e99d9aea-7b53-4189-8309-71910f97b098",
+      "id": "d7862ce7-ad11-47aa-a37d-c081925b7743",
       "comment": "",
       "command": "type",
       "target": "xpath=//div[3]/input",
@@ -199,7 +206,7 @@
       ],
       "value": "addr@example.com"
     }, {
-      "id": "5572a8e1-8425-4a4a-b965-aec143e664bd",
+      "id": "ededaafc-d3ce-408d-919c-2eb6d79cd9ab",
       "comment": "",
       "command": "click",
       "target": "xpath=//textarea",
@@ -213,7 +220,7 @@
       ],
       "value": ""
     }, {
-      "id": "b8eead7d-1afd-4d68-841b-c5c645d2dcc7",
+      "id": "23ed5290-e06b-42f4-85e8-d0d11f04e40a",
       "comment": "",
       "command": "type",
       "target": "xpath=//textarea",
@@ -227,7 +234,7 @@
       ],
       "value": "some text"
     }, {
-      "id": "2f458635-cb06-444a-b97e-a34d222fa3a6",
+      "id": "56246851-556d-4726-9b9c-391285d9e005",
       "comment": "",
       "command": "click",
       "target": "xpath=//div[6]/input",
@@ -238,30 +245,26 @@
         ["xpath=//div[6]/input", "xpath:position"]
       ],
       "value": ""
-    }, {
-      "id": "8a1723cf-aa3c-4efb-87b4-bd868290868f",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//li/div/div[2]",
-      "targets": [
-        ["css=.ticket-comment-text", "css:finder"],
-        ["xpath=//li[@id='comment-']/div/div[2]", "xpath:idRelative"],
-        ["xpath=//li/div/div[2]", "xpath:position"]
-      ],
-      "value": ""
     }]
   }, {
     "id": "61f9d428-85c1-4449-a487-a9e5e98687dd",
     "name": "showYandexMapSelectShop",
     "commands": [{
-      "id": "887c0abd-f2d2-4e7b-9a5c-d34f15d70eea",
+      "id": "7b5ca5ba-8e5e-4177-aa3c-2108b9cc418f",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://ulmarts.ru/catalog/vologda",
       "targets": [],
       "value": ""
     }, {
-      "id": "163d6240-be29-461b-a92b-a904b68ff52d",
+      "id": "1e23abbd-e952-4c17-9a14-3cda62aad34d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "658x690",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4fa6e63-7a99-4635-9d47-6281fd0dad5f",
       "comment": "",
       "command": "click",
       "target": "xpath=//li/a",
@@ -273,10 +276,24 @@
       ],
       "value": ""
     }, {
-      "id": "9b0e07cf-0bbf-485a-9229-49ee9b12a887",
+      "id": "0315937a-b50c-4503-b12d-9172c04d7e65",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,733.3333129882812)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cf25d70-0dc0-4c6c-9a40-28d6bb841454",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2800)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db620d76-559d-43b1-8323-ad97678fd04a",
       "comment": "",
       "command": "click",
-      "target": "css=.ymaps-2-1-77-html-placemark-overlay:nth-child(1) .ymaps-2-1-77-placemark__content-inner",
+      "target": "xpath=//ymaps[5]/ymaps/ymaps/ymaps/ymaps[3]/ymaps",
       "targets": [
         ["css=.ymaps-2-1-77-html-placemark-overlay:nth-child(1) .ymaps-2-1-77-placemark__content-inner", "css:finder"],
         ["xpath=//div[@id='yandexMap']/ymaps/ymaps/ymaps/ymaps[5]/ymaps/ymaps/ymaps/ymaps[3]/ymaps", "xpath:idRelative"],
@@ -284,7 +301,7 @@
       ],
       "value": ""
     }, {
-      "id": "1b14a01f-228f-4b8d-8149-07cfe5294bf3",
+      "id": "1f7fde7e-c0ef-429d-8db3-1b4f39154298",
       "comment": "",
       "command": "click",
       "target": "xpath=//p/a",
@@ -292,39 +309,25 @@
         ["linkText=Подробнее", "linkText"],
         ["css=p:nth-child(1) > a", "css:finder"],
         ["xpath=//a[contains(text(),'Подробнее')]", "xpath:link"],
-        ["xpath=//ymaps[@id='id_160380013485210497125']/ymaps/p/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'goroda/troick/troick-im-yu-a-gagarina-ul-d-14')]", "xpath:href"],
+        ["xpath=//ymaps[@id='id_160404885485016072758']/ymaps/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'goroda/tolyatti/tolyatti-stepana-pr-kt-vld-78b')]", "xpath:href"],
         ["xpath=//p/a", "xpath:position"],
         ["xpath=//a[contains(.,'Подробнее')]", "xpath:innerText"]
       ],
-      "value": ""
-    }, {
-      "id": "11d90ee1-800d-457b-9649-ce7c6816076b",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,21.33333396911621)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "fc5c6e66-07ac-473c-85cf-ab491ca43478",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,1700)",
-      "targets": [],
       "value": ""
     }]
   }, {
     "id": "8b91881f-b950-4f2f-b21d-385e4b250b42",
     "name": "getCoffeeMakerProfile",
     "commands": [{
-      "id": "9dfad5be-74af-4306-b285-1a88c706143c",
+      "id": "6190c544-be65-4c56-9d0f-5a7c5040949a",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "d9c1924b-3e97-4844-9436-f57a61c8c629",
+      "id": "1346bd48-7505-403a-8e7e-ebe32ecf4f33",
       "comment": "",
       "command": "click",
       "target": "xpath=//div[3]/div/div/a",
@@ -339,7 +342,7 @@
       ],
       "value": ""
     }, {
-      "id": "65af0c19-e534-45d8-97cc-956a183c8d1c",
+      "id": "7b125b6b-b796-46db-aeae-ac9fc371247f",
       "comment": "",
       "command": "click",
       "target": "xpath=//div[4]/ul/li[2]/a",
@@ -353,17 +356,23 @@
       ],
       "value": ""
     }, {
-      "id": "80f9bd69-0bb7-4688-8bca-476a811106aa",
+      "id": "a6e87fe7-8719-48b6-9e3d-1bb174aded6a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,376)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be144fba-43bc-47cb-8c9a-ec1a4ddc7d59",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div/div[3]/div/div/a",
+      "target": "xpath=//div[4]/div/div/a",
       "targets": [
-        ["linkText=Кофемашина Krups Quattro Force Evidence EA891C10", "linkText"],
-        ["css=.owl-item:nth-child(3) a", "css:finder"],
-        ["xpath=//a[contains(text(),'Кофемашина Krups Quattro Force Evidence EA891C10')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'shop/kofemashina-krups-quattro-force-evidence-ea891c10')]", "xpath:href"],
-        ["xpath=//div/div[3]/div/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Кофемашина Krups Quattro Force Evidence EA891C10')]", "xpath:innerText"]
+        ["linkText=Кофемашина капсульного типа Nespresso DeLonghi EN85.L", "linkText"],
+        ["css=.owl-item:nth-child(4) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Кофемашина капсульного типа Nespresso DeLonghi EN85.L')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'shop/kofemashina-kapsulnogo-tipa-nespresso-delonghi-en85-l')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"]
       ],
       "value": ""
     }]
@@ -453,38 +462,31 @@
     "id": "1c52410f-49c5-4ab3-870b-3b11a01ff7e9",
     "name": "getPrivicyPolicy",
     "commands": [{
-      "id": "a2aecc97-f84d-4268-bb2c-09324bbc3f1f",
+      "id": "f451c61d-ff69-4d28-b0f4-1ea3bbf15429",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://ulmarts.ru/",
       "targets": [],
       "value": ""
     }, {
-      "id": "a7d50af7-b43c-45a3-aedc-7178778ccfc2",
+      "id": "4eb4966f-1231-4a99-8f2b-3e9f253fd16e",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[15]/div/div/div/a",
+      "target": "xpath=//div[17]/div/div/div/a",
       "targets": [
-        ["linkText=Отделение Лесопарковая ул., д. 6", "linkText"],
-        ["css=.mag-row:nth-child(20) a", "css:finder"],
-        ["xpath=//a[contains(text(),'Отделение Лесопарковая ул., д. 6')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'goroda/zheleznodorozhnyj/zheleznodorozhnyj-lesoparkovaya-ul-d-6')]", "xpath:href"],
-        ["xpath=//div[15]/div/div/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Отделение Лесопарковая ул., д. 6')]", "xpath:innerText"]
+        ["linkText=Отделение Авиаторов пр-кт, д. 149", "linkText"],
+        ["css=.mag-row:nth-child(22) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Отделение Авиаторов пр-кт, д. 149')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'goroda/yaroslavl/yaroslavl-aviatorov-pr-kt-d-149')]", "xpath:href"],
+        ["xpath=//div[17]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Отделение Авиаторов пр-кт, д. 149')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "1a15195d-b15b-456a-82d0-8ec32bb9414e",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,3500)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "726f53a0-d58b-488f-b14a-32e0ac198f16",
+      "id": "5165b701-8d99-4553-b206-55819d12789f",
       "comment": "",
       "command": "click",
-      "target": "xpath=//form/p/a",
+      "target": "xpath=//a[contains(@href, '/politika')]",
       "targets": [
         ["linkText=политикой конфиденциальности", "linkText"],
         ["css=p:nth-child(9) > a", "css:finder"],
@@ -500,14 +502,21 @@
     "id": "3b50d2cd-9bb4-47f9-9fb9-6a373109aeb9",
     "name": "goToYandexMaps",
     "commands": [{
-      "id": "4db38e1b-43bc-4ad7-b02e-e0e6f62b9e4e",
+      "id": "633591cb-b2c0-4822-b85e-d4753c2fb978",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://ulmarts.ru/",
       "targets": [],
       "value": ""
     }, {
-      "id": "569fe1fb-7c8b-4744-9f76-578287c45b75",
+      "id": "32c19f64-abda-49de-bb9c-732e9c8a7aca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "658x690",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb316875-3185-41a1-bcdc-6379bb665e69",
       "comment": "",
       "command": "click",
       "target": "xpath=//li/a",
@@ -519,14 +528,14 @@
       ],
       "value": ""
     }, {
-      "id": "2945d6ba-8a55-405e-b606-94a3432c1e93",
+      "id": "818c24fb-8103-4ec0-9431-b6230e778e0a",
       "comment": "",
       "command": "runScript",
-      "target": "window.scrollTo(0,1570.6666259765625)",
+      "target": "window.scrollTo(0,2500)",
       "targets": [],
       "value": ""
     }, {
-      "id": "5bd6b35d-f156-46c8-8fd2-a60e6a2ff19c",
+      "id": "cc331113-27b3-469f-b2b9-2d96a5a9e6a3",
       "comment": "",
       "command": "click",
       "target": "xpath=//ymaps[2]/ymaps/ymaps/ymaps/ymaps[2]/ymaps",
@@ -537,13 +546,13 @@
       ],
       "value": "",
       "opensWindow": true,
-      "windowHandleName": "win5663",
+      "windowHandleName": "win7981",
       "windowTimeout": 2000
     }, {
-      "id": "872d806a-bd11-4540-a7af-edbee525b988",
+      "id": "52c88d8b-1ffe-413a-9c67-9ed84c0e81a0",
       "comment": "",
       "command": "selectWindow",
-      "target": "handle=${win5663}",
+      "target": "handle=${win7981}",
       "targets": [],
       "value": ""
     }]
@@ -774,14 +783,14 @@
     "id": "d2477d31-cb49-4736-9314-ba8236bffb7e",
     "name": "setCityInProfile",
     "commands": [{
-      "id": "b33d8b5c-5736-4593-b6f0-729e604e13bc",
+      "id": "09243f36-46dc-43d1-b3aa-80641c6f7ec9",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://ulmarts.ru/",
       "targets": [],
       "value": ""
     }, {
-      "id": "d3a63c33-f450-4838-8b47-240118c53b01",
+      "id": "198a95c1-a80f-4ce3-9dd6-2ea75ac07518",
       "comment": "",
       "command": "click",
       "target": "xpath=//div[3]/div/div/a",
@@ -796,7 +805,7 @@
       ],
       "value": ""
     }, {
-      "id": "1b5e26c1-ea6e-427a-b76f-ad1e644265b6",
+      "id": "ac545ee3-fdb3-44d4-8489-bb3737953d38",
       "comment": "",
       "command": "click",
       "target": "xpath=//div[4]/ul/li[2]/a",
@@ -810,7 +819,7 @@
       ],
       "value": ""
     }, {
-      "id": "a42ecdc2-d1f1-49be-ac4c-61d96f29222e",
+      "id": "4c643ec1-ad4c-4b4f-945f-389b641003fd",
       "comment": "",
       "command": "click",
       "target": "xpath=//div[7]/input",
@@ -822,7 +831,7 @@
       ],
       "value": ""
     }, {
-      "id": "5225c82c-1a53-4f83-91a2-f937fce6dce9",
+      "id": "f9264db6-75b3-4640-9e9e-37bf8e576548",
       "comment": "",
       "command": "type",
       "target": "xpath=//div[7]/input",
@@ -834,7 +843,7 @@
       ],
       "value": "Вологда"
     }, {
-      "id": "34a3de92-d0c3-4fe4-a3b2-43dd269abf79",
+      "id": "f584a9fc-ae6a-4e1e-98e9-971164f53cf2",
       "comment": "",
       "command": "click",
       "target": "xpath=//li[62]/a",

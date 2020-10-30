@@ -54,11 +54,11 @@ public class SetCityInProfileTest {
         driver.findElement(By.xpath("//div[3]/div/div/a")).click();
         // 3 | click | xpath=//div[4]/ul/li[2]/a |  |
         driver.findElement(By.xpath("//div[4]/ul/li[2]/a")).click();
-        // 4 | click | xpath=//div[7]/input |  |
-        driver.findElement(By.xpath("//div[7]/input")).click();
-        // 5 | type | xpath=//div[7]/input | Вологда |
-        driver.findElement(By.xpath("//div[7]/input")).sendKeys("Вологда");
+        // 5 | type | xpath=//div[8]/input | Вологда |
+        driver.findElement(By.xpath("//div[8]/input")).sendKeys("Вологда");
         // 6 | click | xpath=//li[62]/a |  |
         driver.findElement(By.xpath("//li[62]/a")).click();
+        // 7 | runScript | window.scrollTo(0,2118.666748046875) |  |
+        js.executeScript("window.scrollTo(0,2118.666748046875)");
     }
 }

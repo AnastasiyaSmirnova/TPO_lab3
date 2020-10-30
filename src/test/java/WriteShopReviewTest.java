@@ -4,24 +4,9 @@ import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.core.IsNot.not;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.Keys;
 
 import java.util.*;
 import java.net.MalformedURLException;
@@ -48,29 +33,29 @@ public class WriteShopReviewTest {
     public void writeShopReview() {
         // Test name: writeShopReview
         // Step # | name | target | value | comment
-        // 1 | open | / |  |
-        driver.get("https://ulmarts.ru//");
-        // 2 | click | xpath=//div[16]/div/div/div/a |  |
-        driver.findElement(By.xpath("//div[16]/div/div/div/a")).click();
-        // 3 | runScript | window.scrollTo(0,800) |  |
-        js.executeScript("window.scrollTo(0,800)");
-        // 4 | runScript | window.scrollTo(0,4780) |  |
-        js.executeScript("window.scrollTo(0,4780)");
-        // 5 | click | xpath=//div[2]/input |  |
+        // 1 | open | https://ulmarts.ru/goroda |  |
+        driver.get("https://ulmarts.ru/goroda");
+        // 2 | runScript | window.scrollTo(0,3330) |  |
+        js.executeScript("window.scrollTo(0,3330)");
+        // 3 | click | xpath=//div[17]/div/div/div/a |  |
+        driver.findElement(By.xpath("//div[17]/div/div/div/a")).click();
+        // 4 | runScript | window.scrollTo(0,3200) |  |
+        js.executeScript("window.scrollTo(0,3200)");
+        // 5 | runScript | window.scrollTo(0,4418.66650390625) |  |
+        js.executeScript("window.scrollTo(0,4418.66650390625)");
+        // 6 | click | xpath=//div[2]/input |  |
         driver.findElement(By.xpath("//div[2]/input")).click();
-        // 6 | type | xpath=//div[2]/input | I |
+        // 7 | type | xpath=//div[2]/input | I |
         driver.findElement(By.xpath("//div[2]/input")).sendKeys("I");
-        // 7 | click | xpath=//div[3]/input |  |
+        // 8 | click | xpath=//div[3]/input |  |
         driver.findElement(By.xpath("//div[3]/input")).click();
-        // 8 | type | xpath=//div[3]/input | addr@example.com |
+        // 9 | type | xpath=//div[3]/input | addr@example.com |
         driver.findElement(By.xpath("//div[3]/input")).sendKeys("addr@example.com");
-        // 9 | click | xpath=//textarea |  |
+        // 10 | click | xpath=//textarea |  |
         driver.findElement(By.xpath("//textarea")).click();
-        // 10 | type | xpath=//textarea | some text |
+        // 11 | type | xpath=//textarea | some text |
         driver.findElement(By.xpath("//textarea")).sendKeys("some text");
-        // 11 | click | xpath=//div[6]/input |  |
+        // 12 | click | xpath=//div[6]/input |  |
         driver.findElement(By.xpath("//div[6]/input")).click();
-        // 12 | click | xpath=//li/div/div[2] |  |
-        driver.findElement(By.xpath("//li/div/div[2]")).click();
     }
 }

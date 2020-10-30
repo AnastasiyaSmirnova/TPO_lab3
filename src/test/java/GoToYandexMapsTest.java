@@ -66,13 +66,13 @@ public class GoToYandexMapsTest {
         driver.get("https://ulmarts.ru//");
         // 2 | click | xpath=//li/a |  |
         driver.findElement(By.xpath("//li/a")).click();
-        // 3 | runScript | window.scrollTo(0,1570.6666259765625) |  |
-        js.executeScript("window.scrollTo(0,1570.6666259765625)");
+        // 3 | runScript | window.scrollTo(0,800) |  |
+        js.executeScript("window.scrollTo(0,800)");
         // 4 | click | xpath=//ymaps[2]/ymaps/ymaps/ymaps/ymaps[2]/ymaps |  |
         vars.put("window_handles", driver.getWindowHandles());
-        // 5 | selectWindow | handle=${win5663} |  |
+        // 5 | selectWindow | handle=${win4096} |  |
         driver.findElement(By.xpath("//ymaps[2]/ymaps/ymaps/ymaps/ymaps[2]/ymaps")).click();
-        vars.put("win5663", waitForWindow(2000));
-        driver.switchTo().window(vars.get("win5663").toString());
+        vars.put("win4096", waitForWindow(2000));
+        driver.switchTo().window(vars.get("win4096").toString());
     }
 }

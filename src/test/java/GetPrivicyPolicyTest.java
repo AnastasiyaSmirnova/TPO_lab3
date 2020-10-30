@@ -29,12 +29,14 @@ import java.net.URL;
 
 public class GetPrivicyPolicyTest {
     private WebDriver driver;
+    private WebDriverWait driverWait;
     private Map<String, Object> vars;
     JavascriptExecutor js;
 
     @Before
     public void setUp() {
         driver = Config.driverConfig();
+        driverWait = new WebDriverWait(driver, 200);
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
@@ -48,13 +50,12 @@ public class GetPrivicyPolicyTest {
     public void getPrivicyPolicy() {
         // Test name: getPrivicyPolicy
         // Step # | name | target | value | comment
-        // 1 | open | / |  |
-        driver.get("https://ulmarts.ru//");
-        // 2 | click | xpath=//div[15]/div/div/div/a |  |
-        driver.findElement(By.xpath("//div[15]/div/div/div/a")).click();
-        // 3 | runScript | window.scrollTo(0,3500) |  |
-        js.executeScript("window.scrollTo(0,3500)");
-        // 4 | click | xpath=//form/p/a |  |
+        // 1 | open | https://ulmarts.ru/ |  |
+        driver.get("https://ulmarts.ru/");
+        // 2 | click | xpath=//div[17]/div/div/div/a |  |
+        driver.findElement(By.xpath("//div[17]/div/div/div/a")).click();
+        // 3 | click | xpath=//form/p/a |  |
+        driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//form/p/a")));
         driver.findElement(By.xpath("//form/p/a")).click();
     }
 }

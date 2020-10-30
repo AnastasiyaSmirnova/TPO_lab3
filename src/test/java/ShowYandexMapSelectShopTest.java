@@ -29,6 +29,7 @@ import java.net.URL;
 
 public class ShowYandexMapSelectShopTest {
     private WebDriver driver;
+    private WebDriverWait driverWait;
     private Map<String, Object> vars;
     JavascriptExecutor js;
 
@@ -52,13 +53,11 @@ public class ShowYandexMapSelectShopTest {
         driver.get("https://ulmarts.ru//");
         // 2 | click | xpath=//li/a |  |
         driver.findElement(By.xpath("//li/a")).click();
-        // 3 | click | css=.ymaps-2-1-77-html-placemark-overlay:nth-child(1) .ymaps-2-1-77-placemark__content-inner |  |
-        driver.findElement(By.cssSelector(".ymaps-2-1-77-html-placemark-overlay:nth-child(1) .ymaps-2-1-77-placemark__content-inner")).click();
-        // 4 | click | xpath=//p/a |  |
+        // 3 | runScript | window.scrollTo(0,1300) |  |
+        js.executeScript("window.scrollTo(0,1300)");
+        // 4 | click | xpath=//ymaps[4]/ymaps/ymaps/ymaps[3]/ymaps |  |
+        driver.findElement(By.xpath("//ymaps[4]/ymaps/ymaps/ymaps[3]/ymaps")).click();
+        // 5 | click | xpath=//p/a |  |
         driver.findElement(By.xpath("//p/a")).click();
-        // 5 | runScript | window.scrollTo(0,21.33333396911621) |  |
-        js.executeScript("window.scrollTo(0,21.33333396911621)");
-        // 6 | runScript | window.scrollTo(0,1700) |  |
-        js.executeScript("window.scrollTo(0,1700)");
     }
 }

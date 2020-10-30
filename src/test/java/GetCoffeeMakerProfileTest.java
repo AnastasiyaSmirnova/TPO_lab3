@@ -46,7 +46,9 @@ public class GetCoffeeMakerProfileTest {
     driver.findElement(By.xpath("//div[3]/div/div/a")).click();
     // 3 | click | xpath=//div[4]/ul/li[2]/a |  | 
     driver.findElement(By.xpath("//div[4]/ul/li[2]/a")).click();
-    // 4 | click | xpath=//div/div[3]/div/div/a |  | 
-    driver.findElement(By.xpath("//div/div[3]/div/div/a")).click();
+    // 4 | runScript | window.scrollTo(0,376) |  | 
+    js.executeScript("window.scrollTo(0,376)");
+    // 5 | click | xpath=//div[4]/div/div/a |  | 
+    driver.findElement(By.xpath("//div[4]/div/div/a")).click();
   }
 }
